@@ -1,0 +1,23 @@
+body {
+   background-color: #1BBC9C;
+   color: white;
+   font-family: sans-serif;
+}
+.header a {
+   float: right;
+}
+a {
+   color: white;
+   text-align: right;
+}
+h1	 {
+   font-size: 32px;
+   font-weight: 900;	
+}
+.article-author {
+   font-weight: bold;
+}
+.article-created-date {
+   font-style: italic;
+   text-align: right;
+}

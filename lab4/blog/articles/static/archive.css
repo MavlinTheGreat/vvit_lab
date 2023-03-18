@@ -1,0 +1,32 @@
+body {
+   background-color: #1BBC9C;
+   color: white;
+   font-family: sans-serif;
+}
+a {
+   color: white;
+}
+.one-post {
+   width: 100%;
+   border-radius: 10px;
+   margin: 10px;
+   padding-right: 8px;
+   padding-left: 8px;
+   margin-top: 10px;
+   padding-top: 1px;
+   padding-bottom: 1px;
+   background-color: #0BAC8C;
+}
+h1 {
+   font-size: 32px;
+   font-weight: 900;	
+}
+.article-info div {
+   display: inline-block;
+}
+.article-author {
+   font-weight: bold;
+}
+.article-created-date {
+   font-style: italic;
+}
