@@ -9,6 +9,7 @@ class Article(models.Model):
 
     def __unicode__ (self):
         return "%s: %s" % (self.author.username, self.title)
+
     def get_excerpt(self):
         return self.text[:140] + "..." if len(self.text) > 140 else self.text
 
