@@ -1,23 +1,39 @@
 body {
-   background-color: #1BBC9C;
-   color: white;
-   font-family: sans-serif;
+ background: #1abc9c;
+ font-family: Tahoma, Arial, sans-serif; 
+ color: #ffffff;
 }
-.header a {
-   float: right;
+
+.header img {
+ display: block; 
+ width: 318px; 
+ margin-left: auto; 
+ margin-right: auto;
 }
-a {
-   color: white;
-   text-align: right;
+
+.article {
+ width: 960px; 
+ margin-left: auto;
+ margin-right: auto;
 }
-h1	 {
-   font-size: 32px;
-   font-weight: 900;	
+
+.post-title a {
+ color: #ffffff;
 }
-.article-author {
-   font-weight: bold;
+
+.header a h1 {
+ color: #ffffff;
+ text-align: center;
 }
-.article-created-date {
-   font-style: italic;
-   text-align: right;
+
+
+.article-author { 
+ width: 50%; 
+ float: left;
+ font-weight: bold;
+}
+	
+.article-created-date { 
+ text-align: right;
+ font-style: italic;
 }
