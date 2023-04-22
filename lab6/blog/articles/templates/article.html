@@ -1,0 +1,29 @@
+<DOCTYPE! html>
+<head>
+     <title>Архив статей</title>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="{{ STATIC_URL }}/static/article.css">
+</head>
+<body class="article">
+	<div class="header">
+		<img src="{{ STATIC_URL }}/static/img/logo.png" />
+		<h1><a href="{{BASE_DIR}}/archive"/>ВСЕ СТАТЬИ</a></h1>
+		{% if request.user.is_authenticated %}
+		<h1><a href="{{BASE_DIR}}/article/new">СОЗДАТЬ СТАТЬЮ</a></h1>
+		<h1><a href="{{BASE_DIR}}/logout/">ВЫЙТИ</a></h1>
+		<h1>ПРИВЕТ, ПОЛЬЗОВАТЕЛЬ {{ request.user.username}}!</h1>
+		{% else %}
+		<h1><a href="{{BASE_DIR}}/auth">АВТОРИЗАЦИЯ</a></h1>
+		<h1><a href="{{BASE_DIR}}/reg">РЕГИСТРАЦИЯ</a></h1>
+		{% endif %}
+	</div>
+	<div class="article">	
+		<h1 class="post-title">{{ post.title }}</h1>
+		<div class="article-info">
+			<div class="article-author">{{ post.author.username }}</div>
+			<div class="article-created-date">{{ post.created_date }}</div>
+		</div>
+		<p class="article-text">{{ post.text }}</p>			
+	</div>
+	
+</body>
