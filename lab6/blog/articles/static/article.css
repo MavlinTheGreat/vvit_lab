@@ -4,12 +4,12 @@ body {
  color: #ffffff;
 }
 
-.header img {
- display: block; 
- width: 318px; 
- margin-left: auto; 
- margin-right: auto;
+.header {
+    display: inline-block;
 }
+
+
+
 
 .article {
  width: 960px; 
@@ -21,9 +21,22 @@ body {
  color: #ffffff;
 }
 
+.header img {
+ display: block; 
+ width: 318px; 
+ margin-left: auto; 
+ margin-right: auto;
+ float: left;
+}
+
+.header a {
+    text-decoration: none;
+}
 .header a h1 {
- color: #ffffff;
+ float: right;
+ color: #ffffdd;
  text-align: center;
+ margin: 42px;
 }
 
 

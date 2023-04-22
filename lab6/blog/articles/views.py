@@ -58,16 +58,11 @@ def auth_user(request):
                         error = "Введён неверный пароль"
                         return render(request, 'authorization.html', {'err': error, 'oldlog': log})
                 except:
-                    error = "Данного пользователя не существует. Может, вам стоит <a href='reg.html'>зарегистрироваться?</a>"
+                    error = "Данного пользователя не существует."
                     return render(request, 'authorization.html', {'err': error})
             else:
-                 error = "блядь чел введи поля ей богу чё как маленький"
+                 error = "Есть пустые поля"
                  return render(request, 'authorization.html', {'err': error})
-            """
-            prosti
-            pomogi
-            sometimes it feels tough even it's easy
-            """
         elif request.method == "GET":
             return render(request, 'authorization.html', {})
 
@@ -87,7 +82,7 @@ def reg_user(request):
                     User.objects.create_user(log, mail, pas)
                     return redirect("/auth/")
             else:
-                error = "блядь чел введи поля ей богу чё как маленький"
+                error = "Есть пустые поля."
                 return render(request, 'registration.html', {'err': error})
         elif request.method == "GET":
             return render(request, 'registration.html', {})
